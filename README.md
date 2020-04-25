@@ -39,6 +39,24 @@ ps.E431配置落后，不管是window还是macOS都卡顿，已更新内存条�
 2. clover版本5113，EFI可用于引导10.12.6、10.14.6、10.15.4
 3. 安装完10.14.6不要在设置里更新1.6G左右的安装包，会导致卡顿严重。不要使用搜狗输入法，卡顿严重。远景10.5.2镜像安装成功后设置直接更新10.5.4，未发现异常。
 4. 驱动情况，基本已更新至最新版
+```
+EFI\CLOVER\kexts\Other\VoodooPS2Controller.kext (v.1.9.2)
+EFI\CLOVER\kexts\Other\VirtualSMC.kext (v.1.1.2)
+EFI\CLOVER\kexts\Other\USBInjectAll.kext (v.0.7.5)
+EFI\CLOVER\kexts\Other\SMCSuperIO.kext (v.1.1.2)
+EFI\CLOVER\kexts\Other\SMCProcessor.kext (v.1.1.2)
+EFI\CLOVER\kexts\Other\SMCLightSensor.kext (v.1)
+EFI\CLOVER\kexts\Other\SMCBatteryManager.kext (v.1)
+EFI\CLOVER\kexts\Other\RealtekRTL8111.kext (v.2.2.2)
+EFI\CLOVER\kexts\Other\Lilu.kext (v.1.4.3)
+EFI\CLOVER\kexts\Other\IntelMausiEthernet.kext (v.2.2.1d1)
+EFI\CLOVER\kexts\Other\FakePCIID_XHCIMux.kext (v.1.3.9)
+EFI\CLOVER\kexts\Other\FakePCIID.kext (v.1.3.9)
+EFI\CLOVER\kexts\Other\BlueTooth_Injector.kext (v.1.0.0)
+EFI\CLOVER\kexts\Other\AppleBacklightInjector.kext (v.0.9.0)
+EFI\CLOVER\kexts\Other\AppleALC.kext (v.1.4.8)
+EFI\CLOVER\kexts\Other\ACPIPoller.kext (v.0.8.1)
+```
   - ACPI用的hotpatch
   - 显卡，核心显卡HD4000，启动项屏蔽独显
   - 亮度调节正常，电池识别正常
