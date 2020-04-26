@@ -21,6 +21,16 @@
 每次想到还有小瑕疵，“又不是不能用”的箴言可以缓解心情  
 ps.E431配置落后，不管是window还是macOS都卡顿，已更新内存条、固态  
 
+#### 小于 4k 的屏幕（2k 或 1080p）开启 HiDPI
+```
+ 此脚本的目的是为中低分辨率的屏幕开启 HiDPI 选项，并且具有原生的 HiDPI 设置，不需要 RDM 软件即可在系统显示器设置中设置
+macOS 的 DPI 机制和 Windows 下不一样，比如 1080p 的屏幕在 Windows 下有 125%、150% 这样的缩放选项，而同样的屏幕在 macOS 下，缩放选项里只是单纯的调节分辨率，这就使得在默认分辨率下字体和UI看起来很小，降低分辨率又显得模糊
+```
+- 脚本`bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"`  
+- 分辨率建议填写2560x1440 1920x1080 1680x945 1536x864 1488x837 1440x810 1280x720，其中1680x945HiDPI和1488x837HiDPI是推荐项，而
+1488x837HiDPI基本解决了字体太小显示发虚的问题，但是比1680x945HiDPI的图标看着大些。
+
+
 #### updated in 20200425
 -  发现睡眠差不多每小时自动唤醒，醒后自动重新睡眠，不确定未升级前是否也这样，平时没注意。`log show --last 6h | grep "Wake reason"`查看唤醒原因，主要是`AppleACPIPlatformPower Wake reason: RTC (Alarm)`，~~atched新增SSDT-RTC0.aml后解决，当晚直到第二天未发现RTC唤醒记录。~~ 还是会有RTC唤醒，就这样吧。
 -  发现登录时的桌面壁纸黑屏没有了，但是开机第二阶段出现花屏，注销未发现花屏。开机时间25S左右。
