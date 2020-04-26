@@ -22,7 +22,7 @@
 ps.E431配置落后，不管是window还是macOS都卡顿，已更新内存条、固态  
 
 #### updated in 20200425
--  发现睡眠自动唤醒，不确定未升级前是否也这样，平时没注意。`log show --last 6h | grep "Wake reason"`查看唤醒原因，主要是`AppleACPIPlatformPower Wake reason: RTC (Alarm)`，暂时未能解决。
+-  发现睡眠差不多每小时自动唤醒，不确定未升级前是否也这样，平时没注意。`log show --last 6h | grep "Wake reason"`查看唤醒原因，主要是`AppleACPIPlatformPower Wake reason: RTC (Alarm)`，patched新增SSDT-RTC0.aml后解决，当晚直到第二天未发现RTC唤醒记录。
 ```
 2020-04-25 05:16:44.042603+0800 0x119d3    Default     0x0                  73     0    powerd: [powerd:sleepWake] Wake reason: "<private>"  identity: "<private>"
 2020-04-25 05:17:04.055124+0800 0x74       Default     0x0                  0      0    kernel: (AppleACPIPlatform) AppleACPIPlatformPower Wake reason: RTC (Alarm)
