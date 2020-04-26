@@ -23,6 +23,7 @@ ps.E431配置落后，不管是window还是macOS都卡顿，已更新内存条�
 
 #### updated in 20200425
 -  发现睡眠差不多每小时自动唤醒，醒后自动重新睡眠，不确定未升级前是否也这样，平时没注意。`log show --last 6h | grep "Wake reason"`查看唤醒原因，主要是`AppleACPIPlatformPower Wake reason: RTC (Alarm)`，patched新增SSDT-RTC0.aml后解决，当晚直到第二天未发现RTC唤醒记录。
+-  发现登录时的桌面壁纸黑屏没有了，但是开机第二阶段出现花屏，注销未发现花屏。开机时间25S左右。
 ```
 2020-04-25 05:16:44.042603+0800 0x119d3    Default     0x0                  73     0    powerd: [powerd:sleepWake] Wake reason: "<private>"  identity: "<private>"
 2020-04-25 05:17:04.055124+0800 0x74       Default     0x0                  0      0    kernel: (AppleACPIPlatform) AppleACPIPlatformPower Wake reason: RTC (Alarm)
@@ -64,5 +65,5 @@ EFI\CLOVER\kexts\Other\ACPIPoller.kext (v.0.8.1)
   - 使用VirtualSMC而不是fakesmc
   - CPU i5-3230M侦测7档变频
   - 睡眠、唤醒正常
-  - 其他：无线网卡无解，另外，如果外接HDMI显示器且开启HiDPI，10.14和10.12系统启动或者注销时会花屏或者8苹果，不外接显示器没遇到花屏，不影响使用。而10.15系统不存在此问题，但是开机时间比之前长20s左右，登陆后桌面背景会黑几秒再恢复。
+  - 其他：无线网卡无解，另外，如果外接HDMI显示器且开启HiDPI，10.14和10.12系统启动或者注销时会花屏或者8苹果，不外接显示器没遇到花屏，不影响使用。~~而10.15系统不存在此问题，但是开机时间比之前长20s左右，登陆后桌面背景会黑几秒再恢复。~~
 
