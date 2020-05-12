@@ -17,7 +17,7 @@
         ################              Graphics: Intel HD Graphics 4000 (1536 MB), 3360 x 1890
          ####     #####               Display : 3360 x 1890
 ```
-![](https://pic1awn.oss-cn-shanghai.aliyuncs.com/img/1a51a5da52cc047e1ebec30cb8fed274.jpg?oss-ali)
+
 > 这是老机器ThinkPad E431（62771U0）的EFI  
 每次想到还有小瑕疵，“又不是不能用”的箴言可以缓解心情  
 ps.E431配置落后，不管是window还是macOS都卡顿，已更新内存条、固态  
