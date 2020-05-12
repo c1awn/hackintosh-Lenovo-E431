@@ -20,7 +20,6 @@
 > 这是老机器ThinkPad E431（62771U0）的EFI  
 每次想到还有小瑕疵，“又不是不能用”的箴言可以缓解心情  
 ps.E431配置落后，不管是window还是macOS都卡顿，已更新内存条、固态  
-![](https://pic1awn.oss-cn-shanghai.aliyuncs.com/img/1a51a5da52cc047e1ebec30cb8fed274.jpg?oss-ali)
 #### 小于 4k 的屏幕（2k 或 1080p）开启 HiDPI
 > 此脚本的目的是为中低分辨率的屏幕开启 HiDPI 选项，并且具有原生的 HiDPI 设置，不需要 RDM 软件即可在系统显示器设置中设置
 macOS 的 DPI 机制和 Windows 下不一样，比如 1080p 的屏幕在 Windows 下有 125%、150% 这样的缩放选项，而同样的屏幕在macOS     下，缩放选项里只是单纯的调节分辨率，这就使得在默认分辨率下字体和UI看起来很小，降低分辨率又显得模糊。  
